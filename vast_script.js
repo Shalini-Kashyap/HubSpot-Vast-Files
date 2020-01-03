@@ -1,5 +1,3 @@
-<script>
-
 $(function(){
 
 /**Responsive Navigation**/
@@ -127,5 +125,3 @@ $('.popup_box_outer_wrapper').hide();
 });
 
 });
-
-</script>
