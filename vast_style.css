@@ -1,0 +1,196 @@
+/****************************
+********************** Variables *******/
+
+{% set container = "1200px" %}
+
+{% set bodyFontFamily = "'Heebo', 'Open Sans', sans-serif" %}
+{% set bodyFontColor = "#313438" %}
+{% set bodyTextSize = "14px" %}
+
+{% set headerFontFamily = "'Heebo', 'Open Sans', sans-serif" %}
+{% set headerFontColor = "#666" %}
+{% set header1Size = "62px" %}
+{% set header2Size = "24px" %}
+{% set header3Size = "20px" %}
+{% set header4Size = "18px" %}
+{% set header5Size = "16px" %}
+{% set header6Size = "14px" %}
+
+{% set header1SizeP = "50px" %}
+
+{% set header1SizeM = "42px" %}
+{% set header2SizeM = "22px" %}
+{% set header3SizeM = "20px" %}
+{% set header4SizeM = "18px" %}
+{% set header5SizeM = "16px" %}
+{% set header6SizeM = "14px" %}
+
+{% set linkColor = "#cd7b29" %}
+{% set linkHoverColor = "#e46849" %}
+
+{% set btnBackground = "#666" %}
+{% set btnText = "#fff" %}
+{% set blueText = "#012163" %}
+{% set lightWeight = "300" %}
+{% set regularWeight = "400" %}
+{% set semiWeight = "500" %}
+{% set boldWeight = "700" %}
+
+ /*******************************
+***************************** Global Syles *************/
+
+body {font-size: {{ bodyTextSize }}; color: {{ bodyFontColor }}; line-height: 1.5; margin: 0px; font-family: {{ bodyFontFamily }}; font-weight:{{ lightWeight }}; }
+
+.row-fluid .page-center {max-width: {{ container }}; padding: 0 15px; margin: 0 auto!important; float: none;}
+
+
+{% macro transition(value) -%}
+  -webkit-transition: {{ value }};
+  -moz-transition: {{ value }};
+  -o-transition: {{ value }};
+  -ms-transition: {{ value }};
+  transition: {{ value }};
+{%- endmacro %}
+
+{% macro transform(value) -%}
+  -webkit-transform: {{ value }};
+  -moz-transform: {{ value }};
+  -o-transform: {{ value }};
+  -ms-transform: {{ value }};
+  transform: {{ value }};
+{%- endmacro %}
+
+{% macro borderradius(value) -%}
+  -webkit-border-radius: {{ value }};
+  -moz-border-radius: {{ value }};
+  -o-border-radius: {{ value }};
+  -ms-border-radius: {{ value }};
+  border-radius: {{ value }};
+{%- endmacro %}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+/***** Padding *******/
+.paddingt10 {padding-top: 10px;}
+.paddingt20 {padding-top: 20px;}
+.paddingt30 {padding-top: 30px;}
+.paddingt40 {padding-top: 40px;}
+.paddingt50 {padding-top: 50px;}
+.paddingt60 {padding-top: 60px;}
+.paddingt70 {padding-top: 70px;}
+.paddingt80 {padding-top: 80px;}
+.paddingt90 {padding-top: 90px;}
+.paddingt100 {padding-top: 100px;}
+.paddingt120 {padding-top: 120px;}
+.paddingt140 {padding-top: 140px;}
+.paddingt160 {padding-top: 160px;}
+.paddingt180 {padding-top: 180px;}
+
+.paddingb10 {padding-bottom: 10px;}
+.paddingb20 {padding-bottom: 20px;}
+.paddingb30 {padding-bottom: 30px;}
+.paddingb40 {padding-bottom: 40px;}
+.paddingb50 {padding-bottom: 50px;}
+.paddingb60 {padding-bottom: 60px;}
+.paddingb70 {padding-bottom: 70px;}
+.paddingb80 {padding-bottom: 80px;}
+.paddingb90 {padding-bottom: 90px;}
+.paddingb100 {padding-bottom: 100px;}
+.paddingb120 {padding-bottom: 120px;}
+.paddingb140 {padding-bottom: 140px;}
+.paddingb160 {padding-bottom: 160px;}
+.paddingb180 {padding-bottom: 180px;}
+
+.paddingtb10 {padding-top: 10px; padding-bottom: 10px;}
+.paddingtb20 {padding-top: 20px; padding-bottom: 20px;}
+.paddingtb30 {padding-top: 30px; padding-bottom: 30px;}
+.paddingtb40 {padding-top: 40px; padding-bottom: 40px;}
+.paddingtb50 {padding-top: 50px; padding-bottom: 50px;}
+.paddingtb60 {padding-top: 60px; padding-bottom: 60px;}
+.paddingtb70 {padding-top: 70px; padding-bottom: 70px;}
+.paddingtb80 {padding-top: 80px; padding-bottom: 80px;}
+.paddingtb90 {padding-top: 90px; padding-bottom: 90px;}
+.paddingtb100 {padding-top: 100px; padding-bottom: 100px;}
+.paddingtb100 {padding-top: 100px; padding-bottom: 100px;}
+.paddingtb120 {padding-top: 120px; padding-bottom: 120px;}
+.paddingtb140 {padding-top: 120px; padding-bottom: 120px;}
+.paddingtb160 {padding-top: 160px; padding-bottom: 160px;}
+.paddingtb180 {padding-top: 180px; padding-bottom: 180px;}
+
+@media (max-width: 767px) {
+  .mobile_paddingt0 {padding-top: 0px;}
+  .mobile_paddingt10 {padding-top: 10px;}
+  .mobile_paddingt20 {padding-top: 20px;}
+  .mobile_paddingt30 {padding-top: 30px;}
+  .mobile_paddingt40 {padding-top: 40px;}
+  .mobile_paddingt50 {padding-top: 50px;}
+  .mobile_paddingt60 {padding-top: 60px;}
+  .mobile_paddingt70 {padding-top: 70px;}
+  .mobile_paddingt80 {padding-top: 80px;}
+  .mobile_paddingt90 {padding-top: 90px;}
+  .mobile_paddingt100 {padding-top: 100px;}
+  
+  .mobile_paddingb0 {padding-bottom: 0px;}
+  .mobile_paddingb10 {padding-bottom: 10px;}
+  .mobile_paddingb20 {padding-bottom: 20px;}
+  .mobile_paddingb30 {padding-bottom: 30px;}
+  .mobile_paddingb40 {padding-bottom: 40px;}
+  .mobile_paddingb50 {padding-bottom: 50px;}
+  .mobile_paddingb60 {padding-bottom: 60px;}
+  .mobile_paddingb70 {padding-bottom: 70px;}
+  .mobile_paddingb80 {padding-bottom: 80px;}
+  .mobile_paddingb90 {padding-bottom: 90px;}
+  .mobile_paddingb100 {padding-bottom: 100px;}
+
+  .mobile_paddingtb10 {padding-top: 10px; padding-bottom: 10px;}
+  .mobile_paddingtb20 {padding-top: 20px; padding-bottom: 20px;}
+  .mobile_paddingtb30 {padding-top: 30px; padding-bottom: 30px;}
+  .mobile_paddingtb40 {padding-top: 40px; padding-bottom: 40px;}
+  .mobile_paddingtb50 {padding-top: 50px; padding-bottom: 50px;}
+  .mobile_paddingtb60 {padding-top: 60px; padding-bottom: 60px;}
+  .mobile_paddingtb70 {padding-top: 70px; padding-bottom: 70px;}
+  .mobile_paddingtb80 {padding-top: 80px; padding-bottom: 80px;}
+  .mobile_paddingtb90 {padding-top: 90px; padding-bottom: 90px;}
+  .mobile_paddingtb100 {padding-top: 100px; padding-bottom: 100px;}
+  .set-height {height: auto!important;}
+}
+
+.text-left {text-align: left;}
+  .text-center {text-align: center;}
+.text-right {text-align: right;}
+
+@media (max-width: 767px) {
+    .mobile-text-left {text-align: left;}
+    .mobile-text-center {text-align: center;}
+    .mobile-text-right {text-align: right;}
+}
+
+/*************************************
+*********************** Typography *************/
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: {{ headerFontFamily }};
+  font-weight: bold; line-height: 1.2em; margin: 8px 0; }
+
+h1 {font-size: {{ header1Size }};}
+h2 {font-size: {{ header2Size }};}
+h3 {font-size: {{ header3Size }};}
+h4 {font-size: {{ header4Size }};}
+h5 {font-size: {{ header5Size }};}
+h6 {font-size: {{ header6Size }};}
+ 
+a {text-decoration:none; transition: .25s;}
+a:hover {text-decoration: none;}
+
+.font-white,
+.font-white h1,
+.font-white h2,
+.font-white h3,
+.font-white h4,
+.font-white h5 { color: #fff;}
+
+h2, h4{ color:{{ blueText }}; }
+p{ font-weight:300; }
