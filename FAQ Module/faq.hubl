@@ -1,0 +1,18 @@
+<div class="main-faq-sec">
+  <div class="page-center">
+    <div class="faq-header text-center">
+      <h2>{{ module.section_heading }}</h2>
+    </div>
+    <div class="accordion">
+      {% for item in module.faq_items %}
+	 <div class="accordion_group {% if  item.expanded %}expanded{% endif %}">
+        <div class="accordion_header">{{ item.faq_question }}</div>
+		<div class="accordion_content">
+			{{ item.faq_answer }}
+		</div>
+	</div>
+{% endfor %}
+   
+</div>
+  </div>
+</div>
